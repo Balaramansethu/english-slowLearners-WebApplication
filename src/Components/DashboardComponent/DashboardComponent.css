@@ -1,0 +1,49 @@
+.router{
+    display: flex;
+    float: left;
+    /* justify-content: center; */
+}
+/* DashboardComponent.css */
+
+.dashboard {
+    background-color: #2196F3; /* Blue color */
+    color: #FFFFFF; /* White color */
+    height: 100vh;
+    width:100vw;
+    /* padding: 30px; */
+  }
+  
+  .dashboard ul {
+    list-style-type: none;
+    /* padding: 20; */
+    /* width:10vw */
+  }
+  
+  .module-content{
+    width:10%;
+    margin-right: 50px;
+    /* padding-left: 0; */
+  }
+
+  .dashboard li {
+    margin-bottom: 10px;
+  }
+  
+  .dashboard a {
+    text-decoration: none;
+    color: #FFFFFF;
+
+  }
+  
+  
+  .dashboard a:hover {
+    text-decoration: underline;
+  }
+
+
+.box{
+    height: 100vh;
+    width: 70vw;
+    width:100vw;
+    
+}
