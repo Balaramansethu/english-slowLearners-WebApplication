@@ -3,11 +3,10 @@
     float: left;
     /* justify-content: center; */
 }
-/* DashboardComponent.css */
 
 .dashboard {
-    background-color: #2196F3; /* Blue color */
-    color: #FFFFFF; /* White color */
+    background-color: #2196F3; 
+    color: #FFFFFF; 
     height: 100vh;
     width:100vw;
     /* padding: 30px; */
@@ -15,13 +14,29 @@
   
   .dashboard ul {
     list-style-type: none;
-    /* padding: 20; */
-    /* width:10vw */
   }
-  
+  .leaderboard{
+    background-color:#090c92 ;
+    border-radius: 10px;
+    margin: 10x;
+    padding: 0px;
+  }
+
+  .dashboard-heading{
+    margin: 10x;
+  }
+
+
+  .heading-leaderboard{
+    padding: 7px;
+  }
+
+
   .module-content{
     width:10%;
     margin-right: 50px;
+    flex-direction: row;
+
     /* padding-left: 0; */
   }
 
@@ -45,5 +60,5 @@
     height: 100vh;
     width: 70vw;
     width:100vw;
-    
+
 }

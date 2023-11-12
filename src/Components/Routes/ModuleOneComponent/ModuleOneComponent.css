@@ -2,7 +2,29 @@
 {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 50px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  /* margin-left: 50px; */
+}
+.completed-section
+{
+  margin-top: 10px;
+  color: black;
+}
+
+.progress-bar-container{
+  color: black;
+}
+
+.vowels-heading
+{
+  color: black;
+}
+.vowels-example{
+  color: black;
+margin: 5px;}
+.vowel-container
+{
+  margin-left:35px
 }
