@@ -15,8 +15,8 @@ const LeaderboardComponent = ({
 
   // Dummy users for a sportive learning environment
   const users = [
-    { name: '1. John Doe', progress: 45.6 },
-    { name: '2. Jane Smith', progress: 32.1 },
+    { name: '1. kumar', progress: 45.6 },
+    { name: '2. santhosh', progress: 32.1 },
     // Add more dummy users as needed
   ];
 
