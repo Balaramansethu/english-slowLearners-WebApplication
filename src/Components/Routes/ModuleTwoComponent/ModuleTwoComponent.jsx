@@ -29,14 +29,16 @@ const ModuleTwoComponent = () => {
   const [userInputLion, setUserInputLion] = useState('');
   const [feedbackLion, setFeedbackLion] = useState('');
 
+  const [userInputElephant, setUserInputElephant] = useState('');
+  const [feedbackElephant, setFeedbackElephant] = useState('');
+
   const [userInputRaccoon, setUserInputRaccoon] = useState('');
   const [feedbackRaccoon, setFeedbackRaccoon] = useState('');
 
   const [userInputFlamingo, setUserInputFlamingo] = useState('');
   const [feedbackFlamingo, setFeedbackFlamingo] = useState('');
 
-  const [userInputElephant, setUserInputElephant] = useState('');
-  const [feedbackElephant, setFeedbackElephant] = useState('');
+
 
   const speak = (text) => {
     const synth = window.speechSynthesis;
@@ -77,7 +79,7 @@ const ModuleTwoComponent = () => {
 
           <img className='image-container' src={beeImage} alt="Bee" />
           <div className='inputs'>
-            <p className='fill-ups'>Name of the above image</p>
+            <p className='fill-ups'>Name of the given image</p>
             <input
               type="text"
               value={userInputBee}
@@ -85,14 +87,14 @@ const ModuleTwoComponent = () => {
               placeholder="Enter your answer"
             />
             <br/><br/>
-            <button className='btn-check' onClick={() => handleCheck(userInputBee, 'BEE', setFeedbackBee)}>Check</button>
+            <button className='btn-check' onClick={() => handleCheck(userInputBee, 'HONEY BEE', setFeedbackBee)}>Check</button>
             {feedbackBee && <span>{feedbackBee}</span>}
         </div>
 
         
           <img className='image-container' src={deerImage} alt="Deer" />
           <div className='inputs'>
-            <p className='fill-ups'>Name of the above image</p>
+            <p className='fill-ups'>Name of the given image</p>
             <input
               type="text"
               value={userInputDeer}
@@ -107,7 +109,7 @@ const ModuleTwoComponent = () => {
         
           <img className='image-container' src={boarImage} alt="Boar" />
           <div className='inputs'>
-            <p className='fill-ups'>Name of the above image</p>
+            <p className='fill-ups'>Name of the given image</p>
             <input
               type="text"
               value={userInputBoar}
@@ -124,7 +126,7 @@ const ModuleTwoComponent = () => {
 
           <img className='image-container' src={zebraImage} alt="Zebra" />
           <div className='inputs'>
-            <p className='fill-ups'>Name of the above image</p>
+            <p className='fill-ups'>Name of the given image</p>
             <input
               type="text"
               value={userInputZebra}
@@ -138,7 +140,7 @@ const ModuleTwoComponent = () => {
 
           <img className='image-container' src={wolfImage} alt="Wolf" />
           <div className='inputs'>
-            <p className='fill-ups'>Name of the above image</p>
+            <p className='fill-ups'>Name of the given image</p>
             <input
               type="text"
               value={userInputWolf}
@@ -152,7 +154,7 @@ const ModuleTwoComponent = () => {
 
           <img className='image-container' src={lionImage} alt="Lion" />
           <div className='inputs'>
-            <p className='fill-ups'>Name of the above image</p>
+            <p className='fill-ups'>Name of the given image</p>
             <input
               type="text"
               value={userInputLion}
@@ -168,7 +170,7 @@ const ModuleTwoComponent = () => {
 
           <img className='image-container' src={flamingoImage} alt="Flamingo" />
           <div className='inputs'>
-            <p className='fill-ups'>Name of the above image</p>
+            <p className='fill-ups'>Name of the given image</p>
             <input
               type="text"
               value={userInputFlamingo}
@@ -182,7 +184,7 @@ const ModuleTwoComponent = () => {
 
           <img className='image-container' src={elephantImage} alt="elephant" />
           <div className='inputs'>
-            <p className='fill-ups'>Name of the above image</p>
+            <p className='fill-ups'>Name of the given image</p>
             <input
               type="text"
               value={userInputElephant}
@@ -190,13 +192,13 @@ const ModuleTwoComponent = () => {
               placeholder="Enter your answer"
             />
             <br/><br/>
-            <button className='btn-check' onClick={() => handleCheck(userInputFlamingo, 'ELEPHANT', setFeedbackFlamingo)}>Check</button>
+            <button className='btn-check' onClick={() => handleCheck(userInputElephant, 'ELEPHANT', setFeedbackElephant)}>Check</button>
             {feedbackElephant && <span>{feedbackElephant}</span>}
           </div>
 
           <img className='image-container' src={raccoonImage} alt="Raccoon" />
           <div className='inputs'>
-            <p className='fill-ups'>Name of the above image</p>
+            <p className='fill-ups'>Name of the given image</p>
             <input
               type="text"
               value={userInputRaccoon}
