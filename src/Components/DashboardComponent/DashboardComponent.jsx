@@ -5,6 +5,7 @@ import ModuleTwoComponent from '../Routes/ModuleTwoComponent/ModuleTwoComponent'
 import ModuleThreeComponent from '../Routes/ModuleThreeComponent/ModuleThreeComponent';
 import Leaderboard from '../LeaderboardComponent/LeaderboardComponent';
 import './DashboardComponent.css';
+import IntermediateComponent from '../Routes/ModuleTwoComponent/IntermediateComponent';
 
 const DashboardComponent = () => {
   const [moduleOneProgress, setModuleOneProgress] = useState(0);
@@ -15,13 +16,13 @@ const DashboardComponent = () => {
     <Router>
       <div className='dashboard router'>
         <div className='module-content'>
-            <h3 className='dashboard-heading'>Dashboard</h3>
+          <h3 className='dashboard-heading'>Dashboard</h3>
           <ul>
             <li>
               <Link to='/'>ModuleOne (BASIC)</Link>
             </li>
             <li>
-              <Link to='/module2'>ModuleTwo (INTERMEDIATE)</Link>
+              <Link to='/module-two'>ModuleTwo (INTERMEDIATE)</Link>
             </li>
             <li>
               <Link to='/module3'>ModuleThree (ADVANCE)</Link>
@@ -29,16 +30,14 @@ const DashboardComponent = () => {
           </ul>
 
           <div className='leaderboard'>
-          <h3 className='heading-leaderboard'>Leaderboard</h3>
-        <Leaderboard 
-          moduleOneProgress={moduleOneProgress}
-          moduleTwoProgress={moduleTwoProgress}
-          moduleThreeProgress={moduleThreeProgress}
-        />
+            <h3 className='heading-leaderboard'>Leaderboard</h3>
+            <Leaderboard
+              moduleOneProgress={moduleOneProgress}
+              moduleTwoProgress={moduleTwoProgress}
+              moduleThreeProgress={moduleThreeProgress}
+            />
+          </div>
         </div>
-
-        </div>
-        
 
         <Routes>
           <Route
@@ -46,15 +45,21 @@ const DashboardComponent = () => {
             path='/'
             element={<ModuleOneComponent setProgress={setModuleOneProgress} />}
           ></Route>
+          {/* Route for ModuleTwoComponent */}
           <Route
             exact
-            path='/module2'
+            path='/module-two'
             element={<ModuleTwoComponent setProgress={setModuleTwoProgress} />}
           ></Route>
           <Route
             exact
             path='/module3'
             element={<ModuleThreeComponent setProgress={setModuleThreeProgress} />}
+          ></Route>
+          <Route
+          exact 
+          path='/IntermediateLevel'
+          element={<IntermediateComponent/>}
           ></Route>
         </Routes>
       </div>

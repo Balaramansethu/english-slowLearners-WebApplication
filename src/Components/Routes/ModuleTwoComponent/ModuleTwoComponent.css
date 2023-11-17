@@ -5,6 +5,10 @@
   padding: 20px;
   justify-content: space-between;
 }
+.next-btn{
+  color: black;
+}
+
 .imageimage{
   display: flex;
   flex-direction: row;
