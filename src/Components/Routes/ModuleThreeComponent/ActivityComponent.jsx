@@ -1,26 +1,26 @@
 import React from 'react';
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom'
-import '../ModuleThreeComponent/ModuleThreeComponent.css';
+// import '../ModuleThreeComponent/ModuleThreeComponent.css';
 
-const ModuleThreeComponent = () => {
+const ActivityComponent = () => {
   const words = [
     {
-      word: "Happy",
-      pronunciation: "/ˈhæpi/",
-      usage: "She felt happy after receiving the gift.",
-      meaning: "Feeling or showing pleasure or contentment."
+      word: "appropriate",
+      pronunciation: "",
+      usage: ".click on the appropriate 'answer' in the box..",
+      meaning: "suitable."
     },
     {
-      word: "Sunshine",
-      pronunciation: "/ˈsʌnʃaɪn/",
-      usage: "The sunshine brightened up the day.",
-      meaning: "Direct sunlight unbroken by cloud, especially over a comparatively large area."
+      word: "busy",
+      pronunciation: "",
+      usage: "A busy bank",
+      meaning: "a bank where there is lots of work."
     },
     {
-      word: "Friend",
-      pronunciation: "/frɛnd/",
-      usage: "She is my best friend.",
-      meaning: "A person with whom one has a bond of mutual affection."
+      word: "expressions",
+      pronunciation: "",
+      usage: "Use some of the expressions in the word cloud to help you.",
+      meaning: "groups of words used for a situation."
     }
     // Add more simple words as needed
   ];
@@ -55,4 +55,4 @@ const ModuleThreeComponent = () => {
   );
 };
 
-export default ModuleThreeComponent;
+export default ActivityComponent;

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import '../ModuleTwoComponent/ModuleTwoComponent.css';
-import ModuleThreeComponent from '../ModuleThreeComponent/ModuleThreeComponent';
 import beeImage from '../ModuleTwoComponent/image/bee_image.webp';
 import boarImage from '../ModuleTwoComponent/image/boar.png';
 import deerImage from '../ModuleTwoComponent/image/deer.jpg';
@@ -11,7 +10,6 @@ import flamingoImage from '../ModuleTwoComponent/image/flamingo.jpeg';
 import elephantImage from '../ModuleTwoComponent/image/elephant.jpg';
 import raccoonImage from '../ModuleTwoComponent/image/raccoon.png';
 import lionImage from '../ModuleTwoComponent/image/lion.jpg';
-import IntermediateComponent from './IntermediateComponent';
 
 const ModuleTwoComponent = () => {
   

@@ -6,6 +6,7 @@ import ModuleThreeComponent from '../Routes/ModuleThreeComponent/ModuleThreeComp
 import Leaderboard from '../LeaderboardComponent/LeaderboardComponent';
 import './DashboardComponent.css';
 import IntermediateComponent from '../Routes/ModuleTwoComponent/IntermediateComponent';
+import ActivityComponent from '../Routes/ModuleThreeComponent/ActivityComponent';
 
 const DashboardComponent = () => {
   const [moduleOneProgress, setModuleOneProgress] = useState(0);
@@ -61,6 +62,11 @@ const DashboardComponent = () => {
           path='/IntermediateLevel'
           element={<IntermediateComponent/>}
           ></Route>
+          <Route 
+          exact
+          path='/ActivityLevel'
+          element={<ActivityComponent/>}>
+          </Route>
         </Routes>
       </div>
     </Router>
